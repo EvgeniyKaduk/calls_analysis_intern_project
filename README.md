@@ -67,9 +67,15 @@ project/
 
   SELECT c.id call_id, c.created_at, c.call_type, b.name branch_name, o.name organization_name,
   e.score, cr.name criteria_name
+  
   FROM call c 
+  
   JOIN branch b ON b.id = c.fk_call_branch_id_branch
-  join organization o on o.id = b.organization_id
-  join analysis a on a.fk_analysis_call_id_call = c.id
-  join evaluation e on e.fk_evaluation_analysis_id_analysis=a.id
-  join criteria cr on cr.id = e.fk_evaluation_criteria_id_criteria;
+  
+  JOIN organization o ON o.id = b.organization_id
+  
+  JOIN analysis a ON a.fk_analysis_call_id_call = c.id
+  
+  JOIN evaluation e ON e.fk_evaluation_analysis_id_analysis=a.id
+  
+  JOIN criteria cr ON cr.id = e.fk_evaluation_criteria_id_criteria;
