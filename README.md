@@ -44,17 +44,17 @@ cd calls_analysis_intern_project
 - Если вдруг появится ошибка с зависимостями, можно обновить проблемную библиотеку: pip install --upgrade pip <имя_библиотеки>
 
 6. Проверка структуры проекта
-```
+```text
 project/
-|
+│
 ├── requirements.txt
-│   
+│
 ├── call_quality_analyzer/
 │   ├── __init__.py
 │   ├── data_preparation.py
-│   ├── visualiztions.py
-|   ├── analyzer.py
-|   └── app.py
+│   ├── visualizations.py
+│   ├── analyzer.py
+│   └── app.py
 ```
 
 7. Запуск приложения в Streamlit из корневой папки проекта
