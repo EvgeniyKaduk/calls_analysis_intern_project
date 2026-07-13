@@ -24,23 +24,23 @@
 1. Требования
 - Перед запуском убедитесь, что у вас установлено: Python 3.10 или выше; Git (если вы клонируете проект с GitHub); pip (менеджер пакетов Python).
 - Проверить это можно в терминале:
- - python --version
- - pip --version
- - git --version 
+ - `python --version`
+ - `pip --version`
+ - `git --version` 
 
 2. Клонирование проекта
 `git clone https://github.com/EvgeniyKaduk/calls_analysis_intern_project.git`
 
 3. Запуск из каталога проекта
-cd calls_analysis_intern_project
+`cd calls_analysis_intern_project`
 
 4. Установка и активация виртуального окружения
-- python -m venv venv
-- Активация окружения в Windows: venv\Scripts\activate
-- Активация окружения в macOS/Linux: source venv/bin/activate
+- `python -m venv venv`
+- Активация окружения в Windows: `venv\Scripts\activate`
+- Активация окружения в macOS/Linux: `source venv/bin/activate`
 
 5. Установка зависимостей
-- pip install -r requirements.txt
+- `pip install -r requirements.txt`
 - Если вдруг появится ошибка с зависимостями, можно обновить проблемную библиотеку: pip install --upgrade pip <имя_библиотеки>
 
 6. Проверка структуры проекта
@@ -58,7 +58,7 @@ project/
 ```
 
 7. Запуск приложения в Streamlit из корневой папки проекта
-  - streamlit run call_quality_analyzer/app.py
+  - `streamlit run call_quality_analyzer/app.py`
   - Перейти по ссылке в консоли: Local URL: http://localhost:8501 (либо автоматически запустится в браузере)
 
 8. Обратить внимание на необходимые названия столбцов в загружаемом датасете
