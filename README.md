@@ -29,7 +29,7 @@
  - git --version 
 
 2. Клонирование проекта
-git clone https://github.com/EvgeniyKaduk/calls_analysis_intern_project.git
+`git clone https://github.com/EvgeniyKaduk/calls_analysis_intern_project.git`
 
 3. Запуск из каталога проекта
 cd calls_analysis_intern_project
