@@ -65,7 +65,7 @@ project/
   - При отсуствиии необходимых для получения анализа столбцов в загруженных данных, система выдает уведомления и подсказки, чего не хватает для каждого аналитического блока.
   - Ограничение объема загружаемого файла - 200 Мб
   - Оптимальный вариант SQL-запроса для выгрузки датасета с необходимыми данными из базы данных:
-
+```text
   SELECT c.id call_id, c.created_at, c.call_type, b.name branch_name, o.name organization_name,
   e.score, cr.name criteria_name
   
@@ -80,3 +80,4 @@ project/
   JOIN evaluation e ON e.fk_evaluation_analysis_id_analysis=a.id
   
   JOIN criteria cr ON cr.id = e.fk_evaluation_criteria_id_criteria;
+```text
